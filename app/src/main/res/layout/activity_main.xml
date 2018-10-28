@@ -40,13 +40,37 @@
 
     </android.support.v4.widget.NestedScrollView>
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_height="wrap_content"
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
-        android:src="@android:drawable/ic_input_add"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        app:fabSize="normal"
-        android:clickable="true" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        >
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabtop"
+            app:fab_label="Achievements"
+            app:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabmid"
+            app:fab_size="mini"
+            app:fab_label="Voice Recordings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabbottom"
+            app:fab_size="mini"
+            app:fab_label="Slideshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_slideshow_button"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
 
 </android.support.design.widget.CoordinatorLayout>
